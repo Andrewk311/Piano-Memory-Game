@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>PIANO MEMORY GAME</h1>
+    
+    <p>
+      Welcome to the Piano Memory Game, to play press Start!
+    </p>
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>  
+
+    <input type="number" id="total" name="total" value="5" min="1" max="100">
+    
+    <progress value="0" max="10" id="progressBar"></progress>
+    
+    <img id="tally1" style="display: none;" src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FyikroKr4T.png?v=1614904344380" alt="Tally 1" width="25" height="25">
+    <img id="tally2" style="display: none;" src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FyikroKr4T.png?v=1614904344380" alt="Tally 2" width="25" height="25">
+    <img id="tally3" style="display: none;" src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FyikroKr4T.png?v=1614904344380" alt="Tally 3" width="25" height="25">
+
+    <audio src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FC4%20key.mp3?v=1614914587475" id="aud1"></audio>
+    <audio src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FD4.mp3?v=1614915261325" id="aud2"></audio>
+    <audio src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FE4.mp3?v=1614915267284" id="aud3"></audio>
+    <audio src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FF4.mp3?v=1614915271302" id="aud4"></audio>
+    <audio src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FG4.mp3?v=1614915275990" id="aud5"></audio>
+    <audio src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FA4.mp3?v=1614915279382" id="aud6"></audio>
+    <audio src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FB4.mp3?v=1614915289766" id="aud7"></audio>
+    <audio src="https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FC5New.5.mp3?v=1614998770093" id="aud8"></audio>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="play('aud1')" >  </button>
+      <button id="button2" onclick="guess(2)" onmousedown="play('aud2')" >  </button>
+      <button id="button3" onclick="guess(3)" onmousedown="play('aud3')" >  </button>
+      <button id="button4" onclick="guess(4)" onmousedown="play('aud4')" >  </button>
+      <button id="button5" onclick="guess(5)" onmousedown="play('aud5')" >  </button>
+      <button id="button6" onclick="guess(6)" onmousedown="play('aud6')" >  </button>
+      <button id="button7" onclick="guess(7)" onmousedown="play('aud7')" >  </button>
+      <button id="button8" onclick="guess(8)" onmousedown="play('aud8')" >  </button>
+    </div>
+  </body>
+</html>
