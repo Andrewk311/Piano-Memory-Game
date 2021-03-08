@@ -39,13 +39,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[Full game](https://recordit.co/emUsWEwGlG)
+![Full game](https://i.imgur.com/9RmKzEq.gif)
 
-[Losing after three mistakes](https://recordit.co/3eKJHcGYnn)
+![Losing after three mistakes](https://i.imgur.com/pBWQOD6.gif)
 
-[Losing after the timer runs out](https://recordit.co/AVmaMJsDDV)
+![Losing after the timer runs out](https://i.imgur.com/YsLYrKt.gif)
 
-[Changing the number of rounds needed to win](https://recordit.co/92RNvTyr1F)
+![Changing the number of rounds needed to win](https://i.imgur.com/sSWkKlb.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
