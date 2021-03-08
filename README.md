@@ -39,16 +39,16 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-##### Default settings with correct playthrough
+#### Default settings with correct playthrough
 ![Full game](https://i.imgur.com/9RmKzEq.gif)
 
-##### Allows for three mistakes before failure
+#### Allows for three mistakes before failure
 ![Losing after three mistakes](https://i.imgur.com/pBWQOD6.gif)
 
-##### Game ends if the user does not guess within a certain timeframe
+#### Game ends if the user does not guess within a certain timeframe
 ![Losing after the timer runs out](https://i.imgur.com/YsLYrKt.gif)
 
-##### Allows for variable amount of rounds based on user input
+#### Allows for variable amount of rounds based on user input
 ![Changing the number of rounds needed to win](https://i.imgur.com/sSWkKlb.gif)
 
 ## Reflection Questions
