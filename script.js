@@ -15,9 +15,6 @@ var mistakes = 0; //only works afer i reset it idk why
 var timeleft = 10;
 var downloadTimer;
 
-//add tallies at the top
-//finish before wednesday
-
 
 function startGame(){
     downloadTimer = setInterval(timer,1000);
