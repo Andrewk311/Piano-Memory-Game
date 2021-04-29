@@ -3,7 +3,7 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
-  background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FWood.jpeg?v=1614913441226);
+  background-image:url('imgs/Wood.jpeg');
 /*   background-color: #252e36; */
   color: white;
 }
@@ -34,82 +34,82 @@ input [type=number] {
 }
 
 #button1 {
-    background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FC1.jpg?v=1614911408856);
+    background-image:url('imgs/C1.jpg');
     background-size:cover;
 }
 
 #button2 {
-    background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FD1.jpg?v=1614911412000);
+    background-image:url('imgs/D1.jpg');
     background-size:cover;
 }
 
 #button3 {
-    background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FE1.jpg?v=1614911622550);
+    background-image:url('imgs/E1.jpg');
     background-size:cover;
 }
 
 #button4 {
-    background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FF1.jpg?v=1614911625363);
+    background-image:url('imgs/F1.jpg');
     background-size:cover;
 }
 
 #button5 {
-    background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FG1.jpg?v=1614911723600);
+    background-image:url('imgs/G1.jpg');
     background-size:cover;
 }
 
 #button6 {
-    background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FA1.jpg?v=1614911727041);
+    background-image:url('imgs/A1.jpg');
     background-size:cover;
 }
 
 #button7 {
-    background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FB1.jpg?v=1614911853113);
+    background-image:url('imgs/B1.jpg');
     background-size:cover;
 }
 
 #button8 {
-    background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FC2.jpg?v=1614911857510);
+    background-image:url('imgs/C2.jpg');
     background-size:cover;
 }
 
 #button1:active, #button1.lit {
-  background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FC1Shade.jpg?v=1614993229910);
+  background-image:url('imgs/C1Shade.jpg');
   background-size:cover;
 }
 
 #button2:active, #button2.lit {
-  background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FD1Shade.jpg?v=1614993332861);
+  background-image:url('imgs/D1Shade.jpg');
   background-size:cover;
 }
 
 #button3:active, #button3.lit {
-  background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FE1Shade.jpg?v=1614993512034);
+  background-image:url('imgs/E1Shade.jpg');
   background-size:cover;
 }
 
 #button4:active, #button4.lit {
-  background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FF1Shade.jpg?v=1614993584349);
+  background-image:url('imgs/F1Shade.jpg');
   background-size:cover;
 }
 
 #button5:active, #button5.lit {
-  background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FG1Shade.jpg?v=1614993759012);
+  background-image:url('imgs/G1Shade.jpg');
   background-size:cover;
 }
 
 #button6:active, #button6.lit {
-  background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FA1Shade.jpg?v=1614992846103);
+  background-image:url('imgs/A1Shade.jpg');
   background-size:cover;
 }
 
 #button7:active, #button7.lit {
-  background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FB1Shade.jpg?v=1614993747657);
+  background-image:url('imgs/B1Shade.jpg');
   background-size:cover;
 }
 
 #button8:active, #button8.lit {
-  background-image:url(https://cdn.glitch.com/22f91aac-8ac1-4444-a87f-19809f7e4c9c%2FC2Shade.jpg?v=1614993733375);
+  background-image:url('imgs/C2Shade.jpg');
   background-size:cover;
 }
 

@@ -11,7 +11,7 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
-var mistakes = 0; //only works afer i reset it idk why 
+var mistakes = 0; 
 var timeleft = 10;
 var downloadTimer;
 
