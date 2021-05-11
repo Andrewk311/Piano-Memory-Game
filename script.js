@@ -94,8 +94,6 @@ function playClueSequence(){
   }
 }
 
-<<<<<<< Updated upstream
-=======
 //keyboard functionality  
 var button1Pressed = false;
 //make boolean array for each button 
@@ -116,8 +114,6 @@ document.body.addEventListener("keyup", function(event) {
     document.getElementById("button1").style.backgroundImage = "url('imgs/C1.jpg')";
   }
 });
->>>>>>> Stashed changes
-
 function timer(){
   if (timeleft < 0){
     clearInterval(downloadTimer);
