@@ -94,6 +94,29 @@ function playClueSequence(){
   }
 }
 
+<<<<<<< Updated upstream
+=======
+//keyboard functionality  
+var button1Pressed = false;
+//make boolean array for each button 
+document.addEventListener("keydown", function(event) {
+
+  if (event.keyCode == 65 && !button1Pressed) {
+    button1Pressed = true;
+    guess(1);
+    play('aud1')
+    document.getElementById("button1").style.backgroundImage = "url('imgs/C1Shade.jpg')";
+
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+  if (event.keyCode == 65) {
+    button1Pressed = false;
+    document.getElementById("button1").style.backgroundImage = "url('imgs/C1.jpg')";
+  }
+});
+>>>>>>> Stashed changes
 
 function timer(){
   if (timeleft < 0){
