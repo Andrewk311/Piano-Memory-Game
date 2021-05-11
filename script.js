@@ -21,10 +21,14 @@ function startGame(){
     //initialize game variables
     var mistakes = 0;  
     clueHoldTime = 1000;
-    for(var i = 1; i <= 3; i++) document.getElementById("tally" + i).style.display = "none";
+    for(var i = 1; i <= 3; i++) {
+      document.getElementById("tally" + i).style.display = "none";
+    }
     len = document.getElementById("total").value;
     pattern = new Array(len)
-    for(var i = 0; i < len; i++) pattern[i] = parseInt(Math.random() * 8) + 1
+    for(var i = 0; i < len; i++) {
+      pattern[i] = parseInt(Math.random() * 8) + 1
+    }
     progress = 0;
     gamePlaying = true;
     document.getElementById("startBtn").classList.add("hidden");
@@ -52,17 +56,10 @@ function play(key){
   }
 }
 
-function playTone(btn,len){ 
+function playTone(btn){ 
   let str = "aud" + btn
   play(str);
-  tonePlaying = true
-  setTimeout(function(){
-    stopTone()
-  },len)
-}
-
-function stopTone(){
-    tonePlaying = false
+  tonePlaying = true 
 }
 
 function lightButton(btn){
@@ -71,7 +68,6 @@ function lightButton(btn){
 function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit")
 }
-
 
 function playSingleClue(btn){
   if(gamePlaying){
