@@ -56,10 +56,18 @@ function play(key){
   }
 }
 
-function playTone(btn){ 
+function playTone(btn,len){ 
   let str = "aud" + btn
   play(str);
   tonePlaying = true 
+  setTimeout(function(){
+    stopTone()
+  },len)
+}
+
+
+function stopTone(){
+  tonePlaying = false
 }
 
 function lightButton(btn){
@@ -71,7 +79,7 @@ function clearButton(btn){
 
 function playSingleClue(btn){
   if(gamePlaying){
-    lightButton(btn);
+    lightButton(btn);   
     playTone(btn,clueHoldTime);
     setTimeout(clearButton,clueHoldTime,btn);
   }
@@ -94,6 +102,109 @@ function playClueSequence(){
   }
 }
 
+
+//keyboard functionality  
+var buttonPressed = [false,false,false,false,false,false,false,false];
+document.addEventListener("keydown", function(event) {
+
+  if (event.keyCode == 65 && !buttonPressed[0]) {
+    buttonPressed[0] = true;
+    guess(1);
+    play('aud1')
+    lightButton(1)
+  }
+
+  else if (event.keyCode == 83 && !buttonPressed[1]) {
+    buttonPressed[1] = true;
+    guess(2);
+    play('aud2')
+    lightButton(2)
+  }
+
+  else if (event.keyCode == 68 && !buttonPressed[2]) {
+    buttonPressed[2] = true;
+    guess(3);
+    play('aud3')
+    lightButton(3)
+  }
+
+  else if (event.keyCode == 70 && !buttonPressed[3]) {
+    buttonPressed[3] = true;
+    guess(4);
+    play('aud4')
+    lightButton(4)
+  }
+
+  else if (event.keyCode == 74 && !buttonPressed[4]) {
+    buttonPressed[4] = true;
+    guess(5);
+    play('aud5')
+    lightButton(5)
+  }
+
+  else if (event.keyCode == 75 && !buttonPressed[5]) {
+    buttonPressed[5] = true;
+    guess(6);
+    play('aud6')
+    lightButton(6)
+  }
+
+  else if (event.keyCode == 76 && !buttonPressed[6]) {
+    buttonPressed[6] = true;
+    guess(7);
+    play('aud7')
+    lightButton(7)
+  }
+
+  else if (event.keyCode == 186 && !buttonPressed[7]) {
+    buttonPressed[7] = true;
+    guess(8);
+    play('aud8')
+    lightButton(8)
+  }
+});
+
+document.addEventListener("keyup", function(event) {
+  if (event.keyCode == 65) {
+    buttonPressed[0] = false;
+    clearButton(1)
+  }
+
+  else if (event.keyCode == 83) {
+    buttonPressed[1] = false;
+    clearButton(2)
+  }
+
+  else if (event.keyCode == 68) {
+    buttonPressed[2] = false;
+    clearButton(3)
+  }
+
+  else if (event.keyCode == 70) {
+    buttonPressed[3] = false;
+    clearButton(4)
+  }
+
+  else if (event.keyCode == 74) {
+    buttonPressed[4] = false;
+    clearButton(5)
+  }
+
+  else if (event.keyCode == 75) {
+    buttonPressed[5] = false;
+    clearButton(6)
+  }
+
+  else if (event.keyCode == 76) {
+    buttonPressed[6] = false;
+    clearButton(7)
+  }
+
+  else if (event.keyCode == 186) {
+    buttonPressed[7] = false;
+    clearButton(8)
+  }
+});
 
 function timer(){
   if (timeleft < 0){
