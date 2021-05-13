@@ -5,22 +5,18 @@ body {
   margin: 2em;
   background-image:url('imgs/Wood.jpeg');
 /*   background-color: #252e36; */
-  color: white;
+  color:rgb(236, 160, 73);
 }
 
 h1 {
   font-family: verdana, arial, sans-serif;
-  color: #ffedfe;
+  color:burlywood;
 }
 
 button {
   padding: 10px;
   border-radius: 10px;
-  
-}
-
-input [type=number] {
-  
+  background-color:burlywood;
 }
 
 #gameButtonArea > button {
@@ -113,3 +109,79 @@ input [type=number] {
   background-size:cover;
 }
 
+#Rules{
+  position: relative;
+  top: -628px;
+  left: 450px;
+  padding: 5px;
+  border-radius: 1px;
+  background-color:burlywood;
+}
+
+#Scoreboard{
+  position: relative;
+  top: -628px;
+  left: 470px;
+  padding: 5px;
+  border-radius: 1px;
+  background-color:burlywood;
+}
+
+#Register{
+  position: relative;
+  top: -628px;
+  left: 490px;
+  padding: 5px;
+  border-radius: 1px;
+  background-color:burlywood;
+}
+
+.popup {
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+.popup-content {
+
+  position: relative;
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 75%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
